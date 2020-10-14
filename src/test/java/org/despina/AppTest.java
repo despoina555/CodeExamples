@@ -41,4 +41,11 @@ public class AppTest
 
     }
 
+
+    @Test
+    public void getPDFFromString() throws IOException {
+        String fileName=ConvertToPDF.fromStringToPDF();
+        Assert.assertEquals("The Tragedy of Macbeth",fileName);
+    }
+
 }
