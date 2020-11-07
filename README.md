@@ -6,3 +6,5 @@
   which will be used for the user authentication.
    - TestCase: submitNTLMAuthRequest in AppTest class
    - Class: NtlmAuthImplemetation
+   
+##Ex 2: Covert a base64 encoded String to PDF
