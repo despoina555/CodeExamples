@@ -1,9 +1,5 @@
 package org.despina;
 
-import static org.junit.Assert.assertTrue;
-
-import org.apache.http.HttpResponse;
-import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
@@ -46,6 +42,13 @@ public class AppTest
     public void getPDFFromString() throws IOException {
         String fileName=ConvertToPDF.fromStringToPDF();
         Assert.assertEquals("The Tragedy of Macbeth",fileName);
+    }
+
+    @Test
+    public void sendMultipleRequests(){
+        CompletableFutureImpl fut = new CompletableFutureImpl();
+        String minRate = fut.getBestRate();
+        System.out.println( " Buy " + minRate);
     }
 
 
