@@ -47,8 +47,9 @@ public class AppTest
     @Test
     public void sendMultipleRequests(){
         CompletableFutureImpl fut = new CompletableFutureImpl();
-        String minRate = fut.getBestRate();
-        System.out.println( " Buy " + minRate);
+        String currency = fut.getBestRate();
+        System.out.println( " Buy " + currency);
+        Assert.assertNotNull(currency);
     }
 
 

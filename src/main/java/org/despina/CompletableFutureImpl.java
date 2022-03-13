@@ -59,7 +59,7 @@ public class CompletableFutureImpl {
     }
 
     /**
-     * Validate the 2 amounts, rateInEURO and rateInCHF
+     * Compare the 2 rates, rateInEURO and rateInCHF
      * returns the currency , with the best rate, "EURO" or "CHF"
      */
     private String findMin(double rateInEURO, double rateInCHF) {

@@ -10,3 +10,5 @@
 ##Ex 2: Covert a base64 encoded String to PDF
 
 ##Ex 3: Create an Excel file from a String using Java
+
+##Ex 4: Asynchronous programming in Java, Implement CompletableFuture
