@@ -9,6 +9,7 @@ import org.junit.Test;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Unit test for simple App.
@@ -61,5 +62,18 @@ public class AppTest
 
     }
 
+
+    @Test
+    public void storeDataToRedisCache(){
+        int expirationTimeInSeconds = (int) TimeUnit.DAYS.toSeconds(30);
+        JedisCacheService jedisCacheService = new JedisCacheService();
+        String key = "key-1";
+        String value = "value-1";
+
+        jedisCacheService.set(key, value,expirationTimeInSeconds);
+
+        String valueInCache = jedisCacheService.get(key);
+        Assert.assertEquals(value,valueInCache);
+    }
 
 }
