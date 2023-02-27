@@ -1,6 +1,6 @@
 package org.despina;
 
-import aws.sqs.AwsClient;
+import aws.AwsClient;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

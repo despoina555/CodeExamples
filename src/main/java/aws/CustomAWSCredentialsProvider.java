@@ -1,10 +1,10 @@
-package aws.sqs;
+package aws;
 
 import com.amazonaws.auth.AWSCredentials;
 import com.amazonaws.auth.BasicAWSCredentials;
 import com.amazonaws.auth.SystemPropertiesCredentialsProvider;
 
-class CustomAWSCredentialsProvider extends SystemPropertiesCredentialsProvider {
+public class CustomAWSCredentialsProvider extends SystemPropertiesCredentialsProvider {
 
     private static final String AWS_ACCESS_KEY_ID ="<YOUR_AWS_ACCESS_KEY_ID>";
     private static final String AWS_SECRET_KEY = "YOUR_AWS_SECRET_KEY";

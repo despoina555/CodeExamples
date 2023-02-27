@@ -1,4 +1,4 @@
-package aws.sqs;
+package aws;
 
 import com.amazonaws.regions.Regions;
 import com.amazonaws.services.ec2.AmazonEC2Client;
